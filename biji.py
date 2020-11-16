@@ -1,9 +1,6 @@
 from datetime import datetime, timezone, timedelta
 import wave
 import pyaudio
-import pygame
-from mutagen.mp3 import MP3
-import os
 import datetime
 import pymssql
 from aip import AipSpeech#这是百度的aip包,
@@ -37,7 +34,7 @@ flag_wake_up=True
 flag_last_music_name=0
 start_voice=True
 stop_voice=False
-print('软件启动中....')
+print('软件启动中,借鉴....')
 #这个数据库和手写识别没有关系，仅仅就是保存日常的记录数据，毕竟这是我的笔记本，可以语音手写录入的那种
 server = 'SC-201903271457'
 user = 'sa'
