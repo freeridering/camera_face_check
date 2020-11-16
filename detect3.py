@@ -1,6 +1,6 @@
 from scipy import misc
 import tensorflow as tf
-from face_check import detect_face
+import detect_face
 import cv2
 import numpy as np
 
