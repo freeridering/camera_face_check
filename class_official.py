@@ -12,7 +12,8 @@ from tensorflow.examples.tutorials.mnist import input_data
 
 # number 1 to 10 data
 mnist = input_data.read_data_sets(
-    "C:/Users/mentong/anaconda3/envs/py35cv331tf190/Lib/site-packages/tensorflow/mnist_data", one_hot=True)
+    "C:/Users/Administrator/Desktop/camera_face_check/mnist", one_hot=True)
+    # "C:/Users/mentong/anaconda3/envs/py35cv331tf190/Lib/site-packages/tensorflow/mnist_data", one_hot=True)
 
 
 def add_layer(inputs, in_size, out_size, activation_function=None, ):

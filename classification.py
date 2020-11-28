@@ -5,8 +5,8 @@ from tensorflow.examples.tutorials.mnist import input_data
 
 # mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 mnist = input_data.read_data_sets(
-    "C:/Users/mentong/anaconda3/envs/py35cv331tf190/Lib/site-packages/tensorflow/mnist_data", one_hot=True)
-
+    # "C:/Users/mentong/anaconda3/envs/py35cv331tf190/Lib/site-packages/tensorflow/mnist_data", one_hot=True)
+"./mnist", one_hot=True)
 
 def add_layer(inputs, in_size, out_size, activation_function=None):
     with tf.name_scope('layer'):
@@ -47,7 +47,7 @@ train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 sess = tf.Session()
 init = tf.global_variables_initializer()
 sess.run(init)
-for i in range(10001):
+for i in range(1000):
     # training
     batch_xs, batch_ys = mnist.train.next_batch(100)
     sess.run(train_step, feed_dict={xs: batch_xs, ys: batch_ys})
